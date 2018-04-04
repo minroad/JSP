@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="EUC-KR" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
+<title> 증감 연산자 </title>
+
+<script type="text/javascript">
+
+//<![CDATA[
+	var num1=10;	//변수 num1에 10을 저장합니다.
+	var num2=20;	//변수 num2에 20을 저장합니다.
+	var result;		//변수 result를 선언하였습니다.
+	
+	num1--;		//변수 num1에 데이터가 1 감소합니다.
+	//변수 num1에 변환된 데이터를 출력합니다.
+	document.write(num1,"<br />");
+	
+	num1++;		//변수 num1에 데이터가 1 증가됩니다.
+	//변수 num1에 변환된 데이터를 출력합니다.
+	document.write(num1,"<br />");
+	
+	//대입 연산자가 먼저 실행되고, 증가 연산자가 실행됩니다.
+	result=num2++
+	document.write(result,"<br />"); //num2가 먼저 대입되어 20이 출력된다.
+	document.write(num2,"<br />"); //result 20에 1이 증가되어 num2는 21이 출력된다.
+	
+	//증가 연산자가 먼저 발생되고, 대입 연산자가 실행됩니다.
+	result=++num2;
+	//변수 result에 저장된 값 22가 출력됩니다.
+	document.write(result,"<br />");	
+//]]>
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
