@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="EUC-KR" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
+<title> 중첩 for 문 </title>
+<script type="text/javascript">
+//<![CDATA[
+	var num=1;
+	var t="<table border='1'>"; //테이블 시작 태그
+	for(var i=1; i<=4; i++){ //4행
+		t+="<tr>"; //행 시작 태그
+		for(var k=1; k<=3; k++){ //3열
+			t+="<td>"+num+"</td>";
+			num++;
+		}
+		t+="</tr>"; //행 종료 태그
+	}
+	t+="</table>" //테이블 종료 태그
+	console.log(t);
+	document.write(t); //테이블 태그를 문서에 출력합니다.
+//]]>
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
